@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+     <!-- Tambahkan Font dari Google -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!-- Ganti dengan local Tailwind installation -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Tambahkan konfigurasi Tailwind inline untuk development -->
+     <script>
+       tailwind.config = {
+         theme: {
+           extend: {
+             fontFamily: {
+               'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
+               'heading': ['Montserrat', 'sans-serif'],
+             },
+             colors: {
+               primary: {
+                 50: '#f0f9ff',
+                 100: '#e0f2fe',
+                 200: '#bae6fd',
+                 300: '#7dd3fc',
+                 400: '#38bdf8',
+                 500: '#0ea5e9',
+                 600: '#0284c7',
+                 700: '#0369a1',
+                 800: '#075985',
+                 900: '#0c4a6e',
+                 950: '#082f49',
+               },
+             },
+           },
+         }
+       }
+     </script>
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white fixed w-full z-10 transition-shadow duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+               <!-- Logo (Left) -->
+              <div class="text-2xl font-bold text-gray-800">
+                <img src="https://www.triveinvest.co.id/assets/img/header/Logo.svg" alt="Logo" class="w-[180px] h-auto">
+              </div>
+          
+              <!-- Center Menu Items -->
+              <div class="hidden md:flex items-center space-x-8 flex-1 justify-center">
+                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Trading</a>
+                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Program</a>
+                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Riset & Trading Ideas</a>
+                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Platforms</a>
+                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Tentang Kami</a>
+              </div>
+
+              <!-- Buttons (Right) -->
+              <div class="flex items-center space-x-4">
+                <!-- <a href="#" class="px-[32px] py-[14px] text-black rounded-full hover:opacity-90 transition-colors" style="background: #74d3ee">Login</a> -->
+                <a href="#" class="text-base px-[32px] py-[14px] text-white rounded-full hover:opacity-90 transition-colors" style="background: linear-gradient(270deg, rgb(113, 203, 230) 0%, rgb(15, 126, 245) 41.0121%, rgb(0, 89, 184) 81.623%)">Buka Akun Demo</a>
+                <a href="#" class="text-base px-[32px] py-[14px] text-black rounded-full hover:opacity-90 transition-colors" style="border:1px solid #74d3ee">Buka Akun Real</a>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 0) {
+              navbar.classList.add('shadow-[0_5px_5px_0_rgba(165,173,187,0.05),0_-5px_5px_0_rgba(165,173,187,0.05),-5px_0_5px_0_rgba(165,173,187,0.05),5px_0_5px_0_rgba(165,173,187,0.05)]');
+          } else {
+              navbar.classList.remove('shadow-[0_5px_5px_0_rgba(165,173,187,0.05),0_-5px_5px_0_rgba(165,173,187,0.05),-5px_0_5px_0_rgba(165,173,187,0.05),5px_0_5px_0_rgba(165,173,187,0.05)]');
+          }
+      });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="pt-24 bg-gray-50">
+        <div class="container mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                        Selamat Datang di Website Kami
+                    </h1>
+                    <p class="text-gray-600 mb-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                        Mulai Sekarang
+                    </button>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://via.placeholder.com/600x400" alt="Hero Image" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Fitur Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Fitur 1</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Fitur 2</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Fitur 3</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#080c17] text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-xl font-bold mb-4">Logo</h4>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-12">
+                    <div>
+                        <h5 class="font-semibold mb-2">Tautan</h5>
+                        <ul class="text-gray-400">
+                            <li><a href="#" class="hover:text-white">Beranda</a></li>
+                            <li><a href="#" class="hover:text-white">Fitur</a></li>
+                            <li><a href="#" class="hover:text-white">Tentang</a></li>
+                            <li><a href="#" class="hover:text-white">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold mb-2">Kontak</h5>
+                        <ul class="text-gray-400">
+                            <li>info@example.com</li>
+                            <li>+62 123 456 789</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nama Perusahaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
