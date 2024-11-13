@@ -36,6 +36,85 @@
          }
        }
      </script>
+     <script>
+        document.querySelectorAll('.group').forEach(group => {
+          let timeout;
+          
+          group.addEventListener('mouseenter', () => {
+            clearTimeout(timeout);
+          });
+      
+          group.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => {
+              const dropdown = group.querySelector('.dropdown-menu');
+              const overlay = group.querySelector('.overlay');
+              if (dropdown) dropdown.style.opacity = '0';
+              if (overlay) overlay.style.opacity = '0';
+              setTimeout(() => {
+                if (dropdown) dropdown.style.visibility = 'hidden';
+                if (overlay) overlay.style.visibility = 'hidden';
+              }, 500);
+            }, 100);
+          });
+        });
+     </script>
+     <style>
+      .overlay {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        /* Ubah posisi top agar mulai dari bawah navbar */
+        top: 82px; /* Sesuaikan dengan tinggi navbar */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        transition: opacity 0.25s cubic-bezier(0.52, 0.16, 0.24, 1),
+                    visibility 0.25s cubic-bezier(0.52, 0.16, 0.24, 1);
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      .group:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.05s,
+                    visibility 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.05s;
+      }
+
+      .dropdown-group::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        bottom: -20px;
+        left: 0;
+      }
+      
+      .dropdown-menu {
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px) scale(0.98);
+        transform-origin: top;
+        transition: transform 0.25s cubic-bezier(0.52, 0.16, 0.24, 1),
+                    opacity 0.25s cubic-bezier(0.52, 0.16, 0.24, 1),
+                    visibility 0.25s;
+        will-change: transform, opacity, visibility;
+      }
+      
+      .group:hover .dropdown-menu {
+        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+        transition: transform 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.05s,
+                    opacity 0.45s cubic-bezier(0.28, 0.11, 0.32, 1) 0.05s,
+                    visibility 0.45s;
+      }
+    </style>
 </head>
 <body class="font-sans">
     <!-- Navbar -->
@@ -49,11 +128,67 @@
           
               <!-- Center Menu Items -->
               <div class="hidden md:flex items-center space-x-8 flex-1 justify-center">
-                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Trading</a>
-                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Program</a>
-                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Riset & Trading Ideas</a>
-                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Platforms</a>
-                <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Tentang Kami</a>
+                <div class="relative group">
+                  <div class="dropdown-group relative">
+                    <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee] flex items-center">
+                      Trading
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu w-screen bg-white shadow-sm transition-all duration-300 z-50" style="position: fixed; left: 0; top: 82px;">
+                    <div class="container mx-auto">
+                        <div class="max-w-screen-xl mx-auto px-[13rem]">
+                          <div class="grid grid-cols-1 py-4">
+                            <a href="#" class="block text-sm px-4 py-2 text-gray-400">Jelajahi Trading</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Temui Customer Success Team Anda</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Jenis Akun Untuk Pemula dan Profesional</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Produk: Spread dan Komisi</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Teregulasi oleh BAPPEBTI</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Deposit dan Penarikan</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Ajukan untuk Merubah Leverage dan Auto-Cut</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Program Bebas Swap</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Persyaratan Margin</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Perlindungan Saldo Negatif</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="relative group">
+                  <div class="dropdown-group relative">
+                    <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee] flex items-center">
+                      Program
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu w-screen bg-white shadow-sm transition-all duration-300 z-50" style="position: fixed; left: 0; top: 82px;">
+                    <div class="container mx-auto">
+                        <div class="max-w-screen-xl mx-auto px-[13rem]">
+                          <div class="grid grid-cols-1 py-4">
+                            <a href="#" class="block text-sm px-4 py-2 text-gray-400">Jelajahi Program</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Komisi Kembali dengan Manajemen Risiko</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Program Bebas Swap</a>
+                            <a href="#" class="block text-base px-4 py-2 text-black hover:text-[#74d3ee]">Trading Arena Run for Gold</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="relative group">
+                  <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Riset & Trading Ideas</a>
+                </div>
+                <div class="relative group">
+                  <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Platforms</a>
+                </div>
+                <div class="relative group">
+                  <a href="#" class="text-base text-gray-600 hover:text-[#74d3ee]">Tentang Kami</a>
+                </div>
               </div>
 
               <!-- Buttons (Right) -->
