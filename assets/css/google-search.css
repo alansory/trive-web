@@ -1,0 +1,67 @@
+/* Google Custom Search */
+.ct-content {
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+.gs-result a.gs-visibleUrl,
+.gs-result .gs-visibleUrl {
+	color: #00bff3 !important;
+}
+.ct-sidenav .ct-search input {
+	color: #fff;
+}
+
+#searchForm input {
+	height: 58px;
+	height: 5.8rem;
+	line-height: 56px;
+	line-height: 5.6rem;
+	padding: 0 15px;
+	padding: 0 1.5rem;
+}
+.search {
+	margin-left: 70px;
+	position: relative;
+	cursor: pointer;
+	width:450px;
+}
+
+#searchForm input {
+	border: 1px solid #cbcbcb;
+	border-radius: 6px;
+	width: 425px;
+	height: 40px;
+	padding: 0 10px;
+	background: #fff;
+	font-size: 19px;
+	font-size: 1.9rem;
+	color: #000;
+}
+.search:before {
+	display:none!important;
+}
+#searchForm input[type=submit] {
+	position: absolute;
+	width: 0px;
+	border: none;
+	background: url(search-icon.svg) no-repeat;
+	position: absolute;
+	right: 47px;
+	top: 9px;
+	z-index: 9;
+	cursor: pointer;
+}
+
+#output a{
+	font-weight:bold;
+	color: #00A7E8;
+}
+#output a.searchLink{
+	font-weight:bold;
+	color: #0079c2;
+}
+
+#lnkPrev, #lnkNext{
+	font-weight:bold;
+	color: #0079c2;
+}

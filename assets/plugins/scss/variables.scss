@@ -1,0 +1,128 @@
+//------------------------------------------------------------
+// = CUSTOM VARIABLES
+//------------------------------------------------------------
+$img: '../img/';
+$screenxs: 575px;
+$screensm: 767px;
+$screenmd: 991px;
+$screenlg: 1231px;
+
+//SETTINGS VARIABLES BOOTSTRAP 4.1.3
+$spacer: 1rem; // 16px;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.625,
+    ),
+    //10
+    2:
+      (
+        $spacer * 0.9375,
+      ),
+    //15
+    3:
+      (
+        $spacer * 1.25,
+      ),
+    //20
+    4:
+      (
+        $spacer * 1.563,
+      ),
+    //25
+    5:
+      (
+        $spacer * 1.875,
+      ),
+    //30
+    6:
+      (
+        $spacer * 2.188,
+      ),
+    //35
+    7:
+      (
+        $spacer * 2.5,
+      ),
+    //40
+    8:
+      (
+        $spacer * 3.125,
+      ),
+    //50
+    9:
+      (
+        $spacer * 3.75,
+      ),
+    //60
+    10:
+      (
+        $spacer * 4.375,
+      ),
+    //70
+    11:
+      (
+        $spacer * 5,
+      ),
+    //80
+    12:
+      (
+        $spacer * 5.625,
+      ),
+    //90
+    13:
+      (
+        $spacer * 6.25,
+      )
+      //100,,,,,,,,,
+  ),
+  $spacers
+);
+
+// Grid containers
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1232px,
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+);
+
+//color
+$success: #1cd013;
+$red: #e8523d;
+$primary-color: #004e98;
+$light-grey: #999;
+$orange: #f7ba16;
+$primary-light: #02a9c6;
+
+//btn
+$btn-border-width: 1px;
+$btn-box-shadow: none;
+$btn-focus-width: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-border-radius: 0;
+//$btn-padding-y: 0.45rem;
+//$btn-padding-x: 0.45rem;
+
+//input
+$input-bg: rgba(#1d2029, 0.22);
+$input-height: 45px;
+$input-focus-box-shadow: 0;
+$input-padding-x: 1.111rem;
+$input-color: #b9b9b9;
+$input-placeholder-color: #b9b9b9;
+$input-focus-border-color: rgba(#b9b9b9, 0.4);
+$input-btn-padding-y: 0.5rem;
+$input-border-color: rgba(#b9b9b9, 0.22);
+$input-btn-border-width: 1px;
+$border-radius: 0;

@@ -1,0 +1,49 @@
+﻿.pagelayout-modern .hero-banner-lowest-commission {
+    background-image: none;
+    background-color: #ededed;
+    height: 665px;
+    padding-top: 60px;
+}
+@media (max-width: 1230px) {
+    .pagelayout-modern .hero-banner-lowest-commission {
+        height: 550px;
+    
+    }
+        .pagelayout-modern .hero-banner-lowest-commission h1 span {
+            font-size: 1.4em!important;
+        }
+}
+    @media (max-width: 991px) {
+        .pagelayout-modern .hero-banner-lowest-commission {
+            height: auto;
+            padding: 16px;
+            background-position: unset;
+            background-size: unset;
+        }
+
+            .pagelayout-modern .hero-banner-lowest-commission .hero-banner-content {
+                padding: 8px 0;
+            }
+    }
+
+    .pagelayout-modern .hero-banner-lowest-commission h1 span {
+        font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 575px) {
+        .pagelayout-modern .hero-banner-lowest-commission .banner-text-area {
+            order: 1;
+        }
+
+        .pagelayout-modern .hero-banner-lowest-commission .banner-img-area {
+            order: 0;
+        }
+
+        .pagelayout-modern .hero-banner-lowest-commission .banner-form-area {
+            order: 3;
+        }
+
+        .pagelayout-modern .hero-banner-lowest-commission h1 {
+            font-size: 2em;
+        }
+    }

@@ -1,0 +1,178 @@
+﻿
+.rebranding-subpage {
+    font-family: roc-grotesk
+}
+.bg-primary {
+    background-color: #004e98 !important;
+}
+    .rebranding-subpage .hero-banner-content {
+        padding: 14px 1rem !important
+    }
+
+    .rebranding-subpage .hero-banner {
+        background-image: initial !important;
+        background-color: #ff9c00 !important;
+        height: 625px;
+       
+    }
+
+        .rebranding-subpage .hero-banner .img-setting {
+            width: 100%
+        }
+
+@media (max-width: 991px) {
+    .pagelayout-modern .hero-banner-partnership {
+        height: auto;
+        background-size: cover;
+        padding: 64px 0;
+    }
+}
+@media screen and (min-width:991px) {
+    .rebranding-subpage .hero-banner .banner-form-area {
+        max-height: 470px
+    }
+}
+
+.rebranding-subpage .hero-banner .banner-title {
+    font-size: 35px;
+    font-family: roc-grotesk;
+    font-weight: 700!important;
+    color: #000
+}
+
+@media (max-width:991.98px) {
+    .rebranding-subpage .hero-banner .banner-title {
+        font-size: 37px
+    }
+}
+
+@media (max-width:767.98px) {
+    .rebranding-subpage .hero-banner .banner-title {
+        font-size: 24px
+    }
+}
+
+.rebranding-subpage .hero-banner .banner-small-area {
+    font-size: 41px;
+    font-family: roc-grotesk;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff
+}
+
+@media (max-width:991.98px) {
+    .rebranding-subpage .hero-banner .banner-small-area {
+        font-size: 35px
+    }
+}
+
+@media (max-width:767.98px) {
+    .rebranding-subpage .hero-banner .banner-small-area {
+        font-size: 23px
+    }
+}
+
+.rebranding-subpage .hero-banner .top-title-child {
+    font-size: 21px;
+    font-family: roc-grotesk;
+    color: #000
+}
+
+@media (max-width:991.98px) {
+    .rebranding-subpage .hero-banner .top-title-child {
+        font-size: 20px
+    }
+}
+
+@media (max-width:767.98px) {
+    .rebranding-subpage .hero-banner .top-title-child {
+        font-size: 18px
+    }
+}
+
+.rebranding-subpage .hero-banner .small-information {
+    font-size: 22px;
+    font-family: roc-grotesk;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000
+}
+
+@media (max-width:991.98px) {
+    .rebranding-subpage .hero-banner .small-information {
+        font-size: 25px
+    }
+}
+
+@media (max-width:767.98px) {
+    .rebranding-subpage .hero-banner .small-information {
+        font-size: 20px
+    }
+}
+
+.rebranding-subpage .table-total {
+    background-color: #004e98;
+    color: #fff
+}
+
+    .rebranding-subpage .table-total td {
+        border: none
+    }
+
+.rebranding-subpage .will-become .spread-the {
+    display: inline-block;
+    margin-left: 80px
+}
+
+@media screen and (max-width:767px) {
+    .rebranding-subpage .will-become .spread-the {
+        margin-left: 0
+    }
+}
+
+.rebranding-subpage .table {
+    width: 75% !important
+}
+
+.rebranding-subpage .Tnc-style {
+    color: #ff8717;
+    text-decoration: underline !important
+}
+
+.rebranding-subpage i {
+    font-size: 45px;
+    color: #000
+}
+
+.rebranding-subpage .rebranding-social {
+    gap: 50px
+}
+
+@media (max-width:575.98px) {
+    .rebranding-subpage .rebranding-social {
+        gap: 20px
+    }
+}
+
+.rebranding-subpage .trive-prime {
+    color: #74d3ee !important
+}
+
+.special-container {
+    background-color: #d6f3fa;
+    border-radius: 2rem;
+    margin-bottom: 3rem
+}
+
+    .special-container .card {
+        border-radius: 1rem
+    }
+
+        .special-container .card .card-body {
+            padding: 2rem
+        }
+
+.card-container {
+    border-radius: 2rem;
+    background-color: #ff8717 !important
+}

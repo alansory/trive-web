@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="Group_10009" data-name="Group 10009" transform="translate(-390 -254)">
+    <g id="Rectangle_2033" data-name="Rectangle 2033" transform="translate(390 254)" fill="#131313" stroke="#191919" stroke-width="1">
+      <rect width="90" height="90" rx="4" stroke="none"/>
+      <rect x="0.5" y="0.5" width="89" height="89" rx="3.5" fill="none"/>
+    </g>
+    <g id="Group_9925" data-name="Group 9925" transform="translate(411.617 277.494)">
+      <path id="Path_15250" data-name="Path 15250" d="M45.25,2,30.833,19.344,16.416,8.678,2,15.387" transform="translate(-0.242 -0.242)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <g id="Group_9929" data-name="Group 9929">
+        <g id="Group_9931" data-name="Group 9931">
+          <path id="Path_15251" data-name="Path 15251" d="M52.709,1.758A1.758,1.758,0,1,1,50.95,0a1.758,1.758,0,0,1,1.758,1.758" transform="translate(-5.943)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Path_15252" data-name="Path 15252" d="M36.312,21.485a1.758,1.758,0,1,1-1.758-1.758,1.758,1.758,0,0,1,1.758,1.758" transform="translate(-3.962 -2.383)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Path_15253" data-name="Path 15253" d="M19.914,9.354A1.758,1.758,0,1,1,18.155,7.6a1.758,1.758,0,0,1,1.758,1.758" transform="translate(-1.981 -0.918)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Path_15254" data-name="Path 15254" d="M3.517,16.985a1.758,1.758,0,1,1-1.758-1.758,1.758,1.758,0,0,1,1.758,1.758" transform="translate(0 -1.84)" fill="#fff" fill-rule="evenodd"/>
+          <line id="Line_162" data-name="Line 162" y2="0.879" transform="translate(45.008 4.617)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_163" data-name="Line 163" y2="32.75" transform="translate(45.008 7.176)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="1.91 1.91"/>
+          <line id="Line_164" data-name="Line 164" y2="0.879" transform="translate(45.008 40.766)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_165" data-name="Line 165" y2="0.879" transform="translate(1.758 17.812)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_166" data-name="Line 166" y2="19.527" transform="translate(1.758 20.39)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="1.931 1.931"/>
+          <line id="Line_167" data-name="Line 167" y2="0.879" transform="translate(1.758 40.766)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_168" data-name="Line 168" y2="0.879" transform="translate(16.175 11.268)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_169" data-name="Line 169" y2="26.094" transform="translate(16.175 13.83)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="1.915 1.915"/>
+          <line id="Line_170" data-name="Line 170" y2="0.879" transform="translate(16.175 40.766)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_171" data-name="Line 171" y2="0.879" transform="translate(30.591 21.798)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_172" data-name="Line 172" y2="15.622" transform="translate(30.591 24.322)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" stroke-dasharray="1.87 1.87"/>
+          <line id="Line_173" data-name="Line 173" y2="0.879" transform="translate(30.591 40.766)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <line id="Line_174" data-name="Line 174" x2="43.96" transform="translate(1.136 43.012)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

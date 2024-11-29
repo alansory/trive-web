@@ -1,0 +1,59 @@
+const API_BASE_URL = 'https://tst.gkinvest.co.id/';
+var CMS_BASE_URL = 'https://siteprod.gkinvest.co.id/';
+
+
+var pth = window.location.pathname;
+CMS_BASE_URL += pth.startsWith('/EN') ? 'en/' :'';
+var SCA_BASE_URL = CMS_BASE_URL;
+
+function wrt(s){if (s) document.write(s)}
+
+var pageData = [];
+
+function fetch(cName) {
+    pageData[cName] = sessionStorage.getItem(cName +"_" + locale);
+    if (pageData[cName]) {
+        pageData[cName] = JSON.parse(pageData[cName]);
+        return;
+    }
+    $.ajax({
+        async: false,
+        type: 'GET',
+        url: API_BASE_URL + "api/" + (("header-footer" == cName) ? (cName+ '?' + 'locale=' +locale+ '&publicationState=preview')
+            : 'pages?filters[page_url][$eq]=' +cName+ '&locale=' +locale+ '&publicationState=preview'),
+        success: function (data, status, xhr) {
+           // $('section.section:first')[0].innerHTML = "<pre>" +JSON.stringify(data)+ "</pre>";
+           pageData[cName] = (("header-footer" == cName) ? data.data.attributes : data.data[0].attributes);
+           // sessionStorage.setItem(cName +"_" + locale, JSON.stringify(pageData[cName]));
+        }
+    });
+}
+
+function fetchHtml(html) {
+    $.ajax({
+        async: false,
+        type: 'GET',
+        url: html,
+        success: function (data, status, xhr) {
+            document.write(data)
+        }
+    });
+}
+
+
+var locale = "id";
+locale = pth.startsWith('/EN') ? 'en' : (pth.startsWith('/ZU/')>0 ? 'zu' : 'id');
+var contentName = pth.substring(pth.lastIndexOf('/')+1, pth.length).replace(".html", "");
+if (contentName == "" || contentName == "EN")  contentName = "index";
+
+fetch(contentName);
+if (!pageData[contentName]) {
+    document.write("<meta http-equiv='refresh' content='0;url=/404'>");
+}
+
+var url_params = new URLSearchParams(window.location.search);
+if (url_params.has('refcode'))
+    localStorage.setItem("refcode", url_params.get('refcode'));
+
+console.log("locale : " + locale)
+console.log("content: " + contentName)
