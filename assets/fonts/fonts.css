@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local("PT Sans Regular"),
+    local("PT Sans-Regular"),
+    url("../fonts/PTSans-Regular.woff2")
+    format("woff2"), url("../fonts/PTSans-Regular.woff")
+    format("woff");
+    font-display: block;
+}
+
+
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local("PT Sans Bold"),
+    local("PT Sans-Bold"),
+    url("../fonts/PTSans-Bold.woff2")
+    format("woff2"), url("../fonts/PTSans-Bold.woff")
+    format("woff");
+    font-display: block;
+}
+
+@font-face {
+    font-family:"roc-grotesk";
+    src:url("https://use.typekit.net/af/c4fccd/00000000000000007735b7c0/30/l?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/c4fccd/00000000000000007735b7c0/30/d?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/c4fccd/00000000000000007735b7c0/30/a?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n6&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+@font-face {
+    font-family:"roc-grotesk";
+    src:url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/l?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/d?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/97dd77/00000000000000007735b7d4/30/a?primer=bc17ce92a85abc46a39f9bece7b2f77d920441c2b539fa990e0832af4e818730&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-roc-grotesk { font-family: "roc-grotesk",sans-serif; }
